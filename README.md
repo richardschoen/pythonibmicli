@@ -10,6 +10,12 @@ This script will run IBM DB2 database operations via native DB2 driver: python-i
 
 This script is similar to the IBM i ```db2util``` pase app for querying data, but it's a native Python scripting.
 
+**IBM i prerequisites**
+```
+IBM i V7R3 and above   
+Python 3.6 or 3.9 on IBM i   
+QShell on i - (http://www.github.com/richardschoen/qshoni)  
+
 **Pip packages needed**  
 ```pip install ibm_db``` (IBM Database driver)  
   
