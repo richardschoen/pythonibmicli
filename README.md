@@ -42,6 +42,17 @@ Query table QIWS/QCUSCTDT and write to IFS file as JSON
 Insert new record into table QIWS/QCUSTCDT
 ```python3 ibmdbdb.py --sql "insert into qiws.qcustcdt (cusnum,lstnam) values(123456,'Jones') " --outputfile "/tmp/qcustcdt.txt" --action "nonquery"```
 
+# IBMDBCLI - CL wrapper command front end for ibmdbcli.py
 
+Query table QIWS/QCUSCTDT and write to IFS file as CSV
+Calls the ibmdbcli.py Python script via the QSHONI/QSHEXEC command. 
 
-
+```
+IBMDBCLI SCRIPTFILE('/pythonapps/ibmdbcli.py')                                      
+         SQL('select * from qiws.qcustcdt')                  
+         ACTION('QUERY')                                     
+         OUTPUTFILE('/tmp/qcustcdt.csv')                          
+         FIELEDELIM(',')                                     
+         REPLACE(*YES) 
+         OUTPUTTYPE(CSV)
+```
