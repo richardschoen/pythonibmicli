@@ -1,7 +1,9 @@
 # IBM i Python CLI Scripts to query databases or insert, update delete individual records
-This repository will contain ready-tp-run command line (CLI) examples for querying and updating data using a command line Python script.   
+This repository will contain ready-to-run command line (CLI) utility app examples for querying and updating data using a command line Python script.   
 
 Sample CL wrappers will also be added that call the scripts via an IBM i CL command.     
+
+Several versions will be added for: IBM i DB2, SQLite, MariaDB, PostgreSQL and SQL Server. Possibly more.
 
 # ibmdbcli.py - Python command line interface (CLI) script to query or write data to DB2 with ibm_db driver
 This script will run IBM DB2 database operations via native DB2 driver: python-ibmdb.
