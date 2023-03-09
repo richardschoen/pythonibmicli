@@ -44,7 +44,7 @@ Insert new record into table QIWS/QCUSTCDT
 
 # IBMDBCLI - CL wrapper command front end for ibmdbcli.py
 
-Query table QIWS/QCUSCTDT and write to IFS file as CSV
+Query table QIWS/QCUSCTDT and write to IFS file as CSV file.   
 Calls the ibmdbcli.py Python script via the QSHONI/QSHEXEC command. 
 
 ```
