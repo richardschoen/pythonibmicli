@@ -1,9 +1,18 @@
 # IBM i Python CLI Scripts to query databases or insert, update delete individual records
-This repository will contain ready-to-run command line (CLI) utility app examples for querying and updating data using a command line Python script.   
+This repository will contain ready-to-run command line (CLI) utility app examples for querying, inserting and updating data using a command line Python script.   
 
 Sample CL wrappers will also be added that call the scripts via an IBM i CL command.     
 
-Several versions will be added for: IBM i DB2, SQLite, MariaDB, PostgreSQL and SQL Server. Possibly more.
+```Several versions will be added for: IBM i DB2, SQLite, MariaDB, PostgreSQL and SQL Server. Possibly more.```
+
+# Use Case
+RPG and CL cannot easily directly communicate with remote databases.   
+
+These Python scripts and commands will provide an easy way to query remote data and bring back results as ```CSV or other delimited resultsets``` for consumption directly from the IFS by an RPG program or by importing to a database via the ```CPYFRMIMP``` command (Copy From Import File).   
+
+Record results can also be returned in ```JSON`` format. These results can be then consumed in RPG via the ```YAJL``` library ported by Scott Klement (https://www.scottklement.com/yajl), ```noxDB``` library (https://github.com/sitemule/noxDB) or the ```DATA-INTO``` opcode in RPG.   
+
+INSERT, UPDATE and DELETE commands can also be issued to update the selected remote database as well covering the entire CRUD cycle for data access. 
 
 # ibmdbcli.py - Python command line interface (CLI) script to query or write data to DB2 with ibm_db driver
 This script will run IBM DB2 database operations via native DB2 driver: python-ibmdb.
