@@ -3,7 +3,7 @@ This repository will contain ready-to-run command line (CLI) utility app example
 
 Sample CL wrappers will also be added that call the scripts via an IBM i CL command.     
 
-```Several versions will be added for: IBM i DB2, SQLite, MariaDB, PostgreSQL and SQL Server. Possibly more.```
+```Several versions will be added for: IBM i DB2, ODBC, SQLite, MariaDB, PostgreSQL and SQL Server. Possibly more.```
 
 # Use Case
 RPG and CL cannot easily directly communicate with remote databases.   
